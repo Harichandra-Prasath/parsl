@@ -2,7 +2,7 @@ Parsl - Parallel Scripting Library
 ==================================
 |licence| |build-status| |docs| |NSF-1550588| |NSF-1550476| |NSF-1550562| |NSF-1550528| |CZI-EOSS|
 
-Parsl extends parallelism in Python beyond a single computer....
+Parsl extends parallelism in Python beyond a single computer......
 
 You can use Parsl
 `just like Python's parallel executors <https://parsl.readthedocs.io/en/stable/userguide/workflow.html#parallel-workflows-with-loops>`_
