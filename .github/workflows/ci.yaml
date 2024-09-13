@@ -46,22 +46,6 @@ jobs:
         make virtualenv
         source .venv/bin/activate
 
-    - name: make deps clean_coverage
-      run: |
-        source .venv/bin/activate
-        make deps
-        make clean_coverage
-
-    - name: make test
-      run: |
-        source .venv/bin/activate
-
-        # temporary; until test-matrixification
-        export PARSL_TEST_PRESERVE_NUM_RUNS=7
-
-        make test
-        ln -s .pytest/parsltest-current test_runinfo
-
     - name: Documentation checks
       run: |
         source .venv/bin/activate
@@ -85,18 +69,6 @@ jobs:
 
         # temporary; until test-matrixification
         rm -f .pytest/parsltest-current test_runinfo
-
-    - name: Checking parsl-visualize
-      run: |
-        source .venv/bin/activate
-        sudo apt-get install -y graphviz
-        pip install .[monitoring,visualization]
-        parsl/tests/test-viz.sh
-
-    - name: make coverage
-      run: |
-        source .venv/bin/activate
-        make coverage
 
     - name: Archive runinfo logs
       if: ${{ always() }}

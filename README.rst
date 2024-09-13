@@ -43,7 +43,7 @@ then explore the `parallel computing patterns <https://parsl.readthedocs.io/en/s
 .. |licence| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://github.com/Parsl/parsl/blob/master/LICENSE
    :alt: Apache Licence V2.0
-.. |build-status| image:: https://github.com/Harichandra-Prasath/parsl_ci/actions/workflows/ci.yaml/badge.svg?branch=master&event=push
+.. |build-status| image:: https://github.com/Harichandra-Prasath/parsl_ci/actions/workflows/ci.yaml/badge.svg?branch=master_clone&event=pull_request
    :target: https://github.com/Harichandra-Prasath/parsl_ci/actions/workflows/ci.yaml
    :alt: Build status
 .. |docs| image:: https://readthedocs.org/projects/parsl/badge/?version=stable
